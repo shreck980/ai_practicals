@@ -1,0 +1,80 @@
+(L)earn, (D)isplay, or (Q)uit?  l
+
+Enter an example.
+Subject: cow
+    Verb: gives
+    Object: milk
+
+Enter a near-miss (NL to skip).
+Subject: cow
+    Verb: not gives
+    Object: milk
+
+Enter an example.
+Subject: eagle
+    Verb: eat
+    Object: mice
+
+Enter a near-miss (NL to skip).
+Subject: eagle
+    Verb: not eat
+    Object: mice
+
+Enter an example.
+Subject: sheep
+    Verb: gives
+    Object: wool
+
+Enter a near-miss (NL to skip).
+
+Enter an example.
+Subject: goat
+    Verb: gives
+    Object: milk
+
+Enter a near-miss (NL to skip).
+
+Enter an example.
+Subject: cat
+    Verb: eat
+    Object: mice
+
+Enter a near-miss (NL to skip).
+
+Enter an example.
+Subject: goose
+    Verb: is
+    Object: a bird
+
+Enter a near-miss (NL to skip).
+Subject: goose
+    Verb: not is
+    Object: a bird
+
+Enter an example.
+Subject: owl
+    Verb: eat
+    Object: mice
+
+Enter a near-miss (NL to skip).
+
+Enter an example.
+Subject: owl
+    Verb: is
+    Object: a bird
+
+Enter a near-miss (NL to skip).
+
+Enter an example.
+
+(L)earn, (D)isplay, or (Q)uit?  d
+May Have:
+sheep gives wool
+
+Must Have:
+cow or goat gives milk
+eagle or cat or owl eat mice
+goose or owl is a bird
+
+
+(L)earn, (D)isplay, or (Q)uit?  q

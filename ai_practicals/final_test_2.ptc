@@ -1,0 +1,73 @@
+(L)earn, (D)isplay, or (Q)uit?  l
+
+Enter an example.
+Subject: block
+    Verb: on top of
+    Object: sides
+
+Enter a near-miss (NL to skip).
+Subject: block
+    Verb: not on top of
+    Object: sides
+
+Enter an example.
+Subject: side 1
+    Verb: left of
+    Object: side 2
+
+Enter a near-miss (NL to skip).
+
+Enter an example.
+Subject: cylinder
+    Verb: on top of
+    Object: sides
+
+Enter a near-miss (NL to skip).
+
+Enter an example.
+
+(L)earn, (D)isplay, or (Q)uit?  dMay Have:
+side 1 left of side 2
+
+Must Have:
+block or cylinder on top of sides
+
+
+(L)earn, (D)isplay, or (Q)uit?  l
+
+Enter an example.
+Subject: sides
+    Verb: made of
+    Object: wood
+
+Enter a near-miss (NL to skip).
+Subject: sides
+    Verb: not made of
+    Object: wood
+
+Enter an example.
+Subject: sides
+    Verb: made
+    Object: 
+
+Enter a near-miss (NL to skip).
+
+Enter an example.
+Subject: sides
+    Verb: made of
+    Object: metal
+
+Enter a near-miss (NL to skip).
+
+Enter an example.
+
+(L)earn, (D)isplay, or (Q)uit?  dMay Have:
+side 1 left of side 2
+sides made 
+
+Must Have:
+block or cylinder on top of sides
+sides made of wood or metal
+
+
+(L)earn, (D)isplay, or (Q)uit?  q

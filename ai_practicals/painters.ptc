@@ -1,0 +1,134 @@
+(L)earn, (D)isplay, or (Q)uit?  l
+
+Enter an example.
+Subject: Monet
+    Verb: is
+    Object: an impressionist
+
+Enter a near-miss (NL to skip).
+Subject: Monet
+    Verb: not is
+    Object: an impressionist
+
+Enter an example.
+Subject: Manet
+    Verb: is
+    Object: an impressionist
+
+Enter a near-miss (NL to skip).
+
+Enter an example.
+Subject: Caravaggio
+    Verb: painted
+    Object: in baroque
+
+Enter a near-miss (NL to skip).
+Subject: Caravaggio
+    Verb: not painted
+    Object: in baroque
+
+Enter an example.
+Subject: Velazquez
+    Verb: painted
+    Object: in baroque
+
+Enter a near-miss (NL to skip).
+
+Enter an example.
+
+(L)earn, (D)isplay, or (Q)uit?  d
+May Have:
+
+Must Have:
+Monet or Manet is an impressionist
+Caravaggio or Velazquez painted in baroque
+
+
+(L)earn, (D)isplay, or (Q)uit?  l
+
+Enter an example.
+Subject: Monet
+    Verb: is
+    Object: a painter
+
+Enter a near-miss (NL to skip).
+
+Enter an example.
+Subject: Manet
+    Verb: is
+    Object: a painter
+
+Enter a near-miss (NL to skip).
+
+Enter an example.
+Subject: Caravaggio
+    Verb: is
+    Object: a painter
+
+Enter a near-miss (NL to skip).
+
+Enter an example.
+Subject: Velazquez
+    Verb: is
+    Object: a painter
+
+Enter a near-miss (NL to skip).
+Subject: Velazquez
+    Verb: not is
+    Object: a painter
+
+Enter an example.
+
+(L)earn, (D)isplay, or (Q)uit?  d
+May Have:
+Monet or Manet or Caravaggio or Velazquez is a painter
+Manet or Caravaggio or Velazquez is a painter
+Caravaggio or Velazquez is a painter
+
+Must Have:
+Monet or Manet is an impressionist
+Caravaggio or Velazquez painted in baroque
+Velazquez is a painter
+
+
+(L)earn, (D)isplay, or (Q)uit?  l
+
+Enter an example.
+
+(L)earn, (D)isplay, or (Q)uit?  l
+
+Enter an example.
+Subject: Dali
+    Verb: is
+    Object: a painter
+
+Enter a near-miss (NL to skip).
+Subject: Dali
+    Verb: not
+    Object: a painter
+
+Enter an example.
+Subject: Klimt
+    Verb: is
+    Object: a painter
+
+Enter a near-miss (NL to skip).
+Subject: Dali
+    Verb: not is
+    Object: a painter
+
+Enter an example.
+
+(L)earn, (D)isplay, or (Q)uit?  d
+May Have:
+Monet or Manet or Caravaggio or Velazquez or Dali or Klimt is a painter
+Manet or Caravaggio or Velazquez or Dali or Klimt is a painter
+Caravaggio or Velazquez or Dali or Klimt is a painter
+
+Must Have:
+Monet or Manet is an impressionist
+Caravaggio or Velazquez painted in baroque
+Velazquez or Dali or Klimt is a painter
+
+
+(L)earn, (D)isplay, or (Q)uit?  q
