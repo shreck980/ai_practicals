@@ -80,7 +80,7 @@ void Generalizer::restrict(const std::string& ms, const std::string& mv, const s
     }
 }
 
-// Виведення списків
+
 void Generalizer::display(std::ofstream& prtcl) const {
     std::cout << "\nMay Have:\n";
     prtcl << "\nMay Have:\n";
@@ -105,21 +105,21 @@ void Generalizer::learn(std::ofstream& prtcl)
     std::string msub, mverb, mobj;
 
     while (true) {
-        // Get an example from the user
+       
         std::cout << "\nEnter an example.";
-        prtcl << "\n\nEnter an example.";  // Using the '<<' operator for file output
+        prtcl << "\n\nEnter an example.";  
         if (!getExample(sub, verb, obj,prtcl)) return;
 
-        // Check if the example is already in the 'may_have' list
+       
         if (find_may(sub, verb, obj) == -1) {
-            // If it's not in 'may_have', add it and generalize
-            addMayHave(Attribute(sub, verb, obj, true));  // Assuming Attribute constructor takes active as true
+           
+            addMayHave(Attribute(sub, verb, obj, true));  
             generalize(sub, verb, obj);
         }
 
-        // Process near-miss
+        
         std::cout << "Enter a near-miss (NL to skip).";
-        prtcl << "\n\nEnter a near-miss (NL to skip).";  // Writing the prompt to the file
+        prtcl << "\n\nEnter a near-miss (NL to skip).";  
         getExample(msub, mverb, mobj,prtcl);
         restrict(msub, mverb, mobj);
     }
@@ -129,23 +129,23 @@ bool Generalizer::getExample(std::string& subject, std::string& verb, std::strin
 {
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     std::cout << "\nSubject: ";
-    std::getline(std::cin, subject);  // Safer way to read input
+    std::getline(std::cin, subject);  
 
     if (subject.empty()) {
-        subject = "<NL>";  // Default value if no subject is entered
+        subject = "<NL>";  
     }
     
 
-    // Check if the subject is a special marker indicating the end
+  
     if (subject[0] =='<') {
-        return false;  // End condition
+        return false;  
     }
     prtcl << "\nSubject: " << subject;
     std::cout << "    Verb: ";
-    std::getline(std::cin, verb);  // Safer way to read input
+    std::getline(std::cin, verb);  
 
     std::cout << "    Object: ";
-    std::getline(std::cin, object);  // Safer way to read input
+    std::getline(std::cin, object);  
 
     prtcl << "\n    Verb: " << verb << "\n    Object: " << object;
 
@@ -154,12 +154,12 @@ bool Generalizer::getExample(std::string& subject, std::string& verb, std::strin
 
 
 int Generalizer::find_may(const std::string& subject, const std::string& verb, const std::string& object) const {
-    // Assuming 'may' is a vector of 'Attribute' objects, and 'may_pos' is its size
+    
     for (size_t t = 0; t < may_have.size(); ++t) {
         const auto& attr = may_have[t];
         if (attr.subject == subject && attr.verb == verb && attr.object == object && attr.active) {
-            return static_cast<int>(t);  // Return index as int
+            return static_cast<int>(t); 
         }
     }
-    return -1;  // Return -1 if no match is found
+    return -1;  
 }

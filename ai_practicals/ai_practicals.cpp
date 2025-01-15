@@ -58,9 +58,9 @@ void first_practical() {
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
             std::cout << "\nEnter a name of your task, please\n";
             std::getline(std::cin, str);
-            str += ".ptc";  // Add file extension
+            str += ".ptc"; 
 
-            prtcl.open(str, std::ios::out | std::ios::binary);  // Open file for writing in binary mode
+            prtcl.open(str, std::ios::out | std::ios::binary);  
             if (!prtcl.is_open()) {
                 std::cout << "\nFile \"" << str << "\" couldn't be opened for writing.\n";
                 std::exit(1);
