@@ -139,3 +139,14 @@ int PerceptronLearning::calculate_bias()
     return static_cast<int>((mean_e + mean_other) / 2);
 }
 
+void PerceptronLearning::setLetters(std::vector<Letter> letters)
+{
+    this->letters.clear();
+
+    for (int i = 0; i < letters.size(); i++) {
+        this->letters.push_back(letters[i]);
+    }
+
+    
+}
+

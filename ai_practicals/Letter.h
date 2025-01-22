@@ -6,9 +6,9 @@ class Letter
 {
 
 public:
-	const char letterName;
+	std::string letterName;
 	std::vector<int> letterCode;
-	Letter(char letter, std::vector<int> code)
+	Letter(std::string letter, std::vector<int> code)
 		: letterName(letter), letterCode(code) {}
 	
 };

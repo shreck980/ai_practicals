@@ -7,10 +7,10 @@ class PerceptronLearning
 public:
 	std::vector<Letter> letters;
 	std::vector<float> weights;
-	const char targetLetter;
+	std::string targetLetter;
 	int bias;
 
-	PerceptronLearning(std::vector<Letter> letters,const char target)
+	PerceptronLearning(std::vector<Letter> letters,std::string target)
 		:letters(letters),targetLetter(target)
 	{
 		for (int i = 0; i < 15; i++) {
@@ -28,7 +28,9 @@ public:
 	void train_random(size_t range);
 	void train_sequentially(size_t range);
 	void check();
+	void setLetters(std::vector<Letter> letters);
 	int calculate_bias();
+	
 	
 };
 
