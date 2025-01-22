@@ -11,6 +11,13 @@ Subject: Monet
     Object: a painter
 
 Enter an example.
+Subject: Dali
+    Verb: is
+    Object: a painter
+
+Enter a near-miss (NL to skip).
+
+Enter an example.
 Subject: Manet
     Verb: is
     Object: a painter
@@ -37,7 +44,7 @@ Enter an example.
 May Have:
 
 Must Have:
-Monet or Manet or Caravaggio or Velazquez is a painter
+Monet or Dali or Manet or Caravaggio or Velazquez is a painter
 
 
 (L)earn, (D)isplay, or (Q)uit?  l
@@ -65,6 +72,9 @@ Subject: Caravaggio
     Object: in baroque
 
 Enter a near-miss (NL to skip).
+Subject: Caravaggio
+    Verb: not painted
+    Object: in baroque
 
 Enter an example.
 Subject: Velazquez
@@ -74,15 +84,22 @@ Subject: Velazquez
 Enter a near-miss (NL to skip).
 
 Enter an example.
+Subject: Klimt
+    Verb: painted
+    Object: in modern
+
+Enter a near-miss (NL to skip).
+
+Enter an example.
 
 (L)earn, (D)isplay, or (Q)uit?  d
 May Have:
-Caravaggio or Velazquez painted in baroque
-Velazquez painted in baroque
+Klimt painted in modern
 
 Must Have:
-Monet or Manet or Caravaggio or Velazquez is a painter
+Monet or Dali or Manet or Caravaggio or Velazquez is a painter
 Monet or Manet is an impressionist
+Caravaggio or Velazquez painted in baroque
 
 
 (L)earn, (D)isplay, or (Q)uit?  q

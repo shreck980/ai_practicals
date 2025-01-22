@@ -13,24 +13,48 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\pr1">
+      <UniqueIdentifier>{76e69151-7ee7-4342-82e3-33bbfba4f126}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\pr1">
+      <UniqueIdentifier>{8ce26025-4c09-49ee-a8e8-6959fa38c53a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\pr2">
+      <UniqueIdentifier>{5ca1e846-c9d1-449c-95a0-32d976b922f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\pr2">
+      <UniqueIdentifier>{c3da88ce-163f-43f8-8801-f9812bfcbac8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ai_practicals.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Attribute.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\pr1</Filter>
     </ClCompile>
     <ClCompile Include="Generalizer.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\pr1</Filter>
+    </ClCompile>
+    <ClCompile Include="Letter.cpp">
+      <Filter>Source Files\pr2</Filter>
+    </ClCompile>
+    <ClCompile Include="PerceptronLearning.cpp">
+      <Filter>Source Files\pr2</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Attribute.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\pr1</Filter>
     </ClInclude>
     <ClInclude Include="Generalizer.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\pr1</Filter>
+    </ClInclude>
+    <ClInclude Include="Letter.h">
+      <Filter>Header Files\pr2</Filter>
+    </ClInclude>
+    <ClInclude Include="PerceptronLearning.h">
+      <Filter>Header Files\pr2</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

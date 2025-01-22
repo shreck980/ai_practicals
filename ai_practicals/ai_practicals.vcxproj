@@ -130,10 +130,14 @@
     <ClCompile Include="ai_practicals.cpp" />
     <ClCompile Include="Attribute.cpp" />
     <ClCompile Include="Generalizer.cpp" />
+    <ClCompile Include="Letter.cpp" />
+    <ClCompile Include="PerceptronLearning.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Attribute.h" />
     <ClInclude Include="Generalizer.h" />
+    <ClInclude Include="Letter.h" />
+    <ClInclude Include="PerceptronLearning.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

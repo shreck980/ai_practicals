@@ -4,16 +4,115 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <vector>
+#include "Letter.h"
+#include "PerceptronLearning.h"
+#include <locale>
 
 
 
 void first_practical(); 
+void second_practical(); 
 
 int main()
 {
+    setlocale(LC_CTYPE, "ukr");
     std::cout << "Hello World!\n";
-    first_practical();
+    second_practical();
 }
+
+void second_practical() {
+
+    std::vector<Letter> letters = {
+         Letter('Á', {1,1,1,
+                      1,0,0,
+                      1,1,1,
+                      1,0,1,
+                      1,1,1}),
+
+         Letter('Â', {1,1,1,
+                      1,0,1,
+                      1,1,1,
+                      1,0,1,
+                      1,1,1}),
+
+         Letter('Ã', {1,1,1,
+                      1,0,0,
+                      1,0,0,
+                      1,0,0,
+                      1,0,0}),
+
+         Letter('Å', {1,1,1,
+                      1,0,0,
+                      1,1,1,
+                      1,0,0,
+                      1,1,1}),
+
+         Letter('Ç', {1,1,1,
+                      0,0,1,
+                      1,1,1,
+                      0,0,1,
+                      1,1,1}),
+
+         Letter('Í', {1,0,1,
+                      1,0,1,
+                      1,1,1,
+                      1,0,1,
+                      1,0,1}),
+
+         Letter('Î', {1,1,1,
+                      1,0,1,
+                      1,0,1,
+                      1,0,1,
+                      1,1,1}),
+
+         Letter('Ï', {1,1,1,
+                      1,0,1,
+                      1,0,1,
+                      1,0,1,
+                      1,0,1}),
+
+         Letter('Ð', {1,1,1,
+                      1,0,1,
+                      1,1,1,
+                      1,0,0,
+                      1,0,0}),
+
+         Letter('Ñ', {1,1,1,
+                      1,0,0,
+                      1,0,0,
+                      1,0,0,
+                      1,1,1}),
+
+         Letter('Ò', {1,1,1,
+                      0,1,0,
+                      0,1,0,
+                      0,1,0,
+                      0,1,0}),
+
+         Letter('×', {1,0,1,
+                      1,0,1,
+                      1,1,1,
+                      0,0,1,
+                      0,0,1})
+    };
+
+    PerceptronLearning perceptron(letters,letters[7].letterName);
+    int random_train_ranges[] = { 1000,10000,50000};
+    int sequentially_train_ranges[] = { 100,10000 };
+
+    for (int i = 0; i < 3; i++) {
+        perceptron.train_random(random_train_ranges[i]);
+        perceptron.check();
+        perceptron.reset();
+    }
+    for (int i = 0; i < 2; i++) {
+        perceptron.train_sequentially(sequentially_train_ranges[i]);
+        perceptron.check();
+        perceptron.reset();
+    }
+}
+
 
 void first_practical() {
 
