@@ -129,12 +129,16 @@
   <ItemGroup>
     <ClCompile Include="ai_practicals.cpp" />
     <ClCompile Include="Attribute.cpp" />
+    <ClCompile Include="DepthSearch.cpp" />
+    <ClCompile Include="Flight.cpp" />
     <ClCompile Include="Generalizer.cpp" />
     <ClCompile Include="Letter.cpp" />
     <ClCompile Include="PerceptronLearning.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Attribute.h" />
+    <ClInclude Include="DepthSearch.h" />
+    <ClInclude Include="Flight.h" />
     <ClInclude Include="Generalizer.h" />
     <ClInclude Include="Letter.h" />
     <ClInclude Include="PerceptronLearning.h" />

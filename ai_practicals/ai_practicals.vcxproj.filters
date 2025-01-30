@@ -1,60 +1,78 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Header Files\pr1">
-      <UniqueIdentifier>{76e69151-7ee7-4342-82e3-33bbfba4f126}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\pr1">
+    <Filter Include="pr1">
       <UniqueIdentifier>{8ce26025-4c09-49ee-a8e8-6959fa38c53a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\pr2">
-      <UniqueIdentifier>{5ca1e846-c9d1-449c-95a0-32d976b922f3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\pr2">
+    <Filter Include="pr2">
       <UniqueIdentifier>{c3da88ce-163f-43f8-8801-f9812bfcbac8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pr1\Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="pr2\Source Files">
+      <UniqueIdentifier>{fe1cb838-407b-43c5-8407-343603b6d3c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pr1\Header Files">
+      <UniqueIdentifier>{3b7f1a6e-e04d-4ab0-a81f-b592f3cdb0e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pr2\Header Files">
+      <UniqueIdentifier>{52ee630c-2d4a-4f20-a120-909a2ca162e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pr3">
+      <UniqueIdentifier>{c6d27056-c6d6-44bc-9faf-abd99a43734b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pr3\Source Files">
+      <UniqueIdentifier>{8b602460-4778-4fb1-a7c5-3cc7580e1645}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pr3\Header Files">
+      <UniqueIdentifier>{2ceab8d5-64be-4b38-a960-5cc5c5b68112}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ai_practicals.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Attribute.cpp">
-      <Filter>Source Files\pr1</Filter>
+      <Filter>pr1\Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ai_practicals.cpp" />
     <ClCompile Include="Generalizer.cpp">
-      <Filter>Source Files\pr1</Filter>
+      <Filter>pr1\Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Letter.cpp">
-      <Filter>Source Files\pr2</Filter>
+      <Filter>pr2\Source Files</Filter>
     </ClCompile>
     <ClCompile Include="PerceptronLearning.cpp">
-      <Filter>Source Files\pr2</Filter>
+      <Filter>pr2\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DepthSearch.cpp">
+      <Filter>pr3\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Flight.cpp">
+      <Filter>pr3\Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Attribute.h">
-      <Filter>Header Files\pr1</Filter>
+      <Filter>pr1\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Generalizer.h">
-      <Filter>Header Files\pr1</Filter>
+      <Filter>pr1\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Letter.h">
-      <Filter>Header Files\pr2</Filter>
+      <Filter>pr2\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="PerceptronLearning.h">
-      <Filter>Header Files\pr2</Filter>
+      <Filter>pr2\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DepthSearch.h">
+      <Filter>pr3\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Flight.h">
+      <Filter>pr3\Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

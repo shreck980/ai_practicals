@@ -7,20 +7,46 @@
 #include <vector>
 #include "Letter.h"
 #include "PerceptronLearning.h"
+#include "DepthSearch.h"
 #include <locale>
 
 
 
 void first_practical(); 
 void second_practical(); 
+void third_practical(); 
 
 int main()
 {
     setlocale(LC_CTYPE, "ukr");
     std::cout << "Hello World!\n";
-    second_practical();
+    third_practical();
 }
 
+
+void third_practical() {
+
+    DepthSearch search;
+   
+
+     search.addFlight("New York", "Chicago", 1000);
+     search.addFlight("Chicago", "Denver", 1000);
+     search.addFlight("New York", "Toronto", 800);
+     search.addFlight("New York", "Denver", 1900);
+     search.addFlight("Toronto", "Calgary", 1500);
+     search.addFlight("Toronto", "Los Angeles", 1800);
+     search.addFlight("Toronto", "Chicago", 500);
+     search.addFlight("Denver", "Urbana", 1000);
+     search.addFlight("Denver", "Houston", 1500);
+     search.addFlight("Houston", "Los Angeles", 1500);
+     search.addFlight("Denver", "Los Angeles", 1000);
+
+    std::string from = "New York";
+    std::string to = "Los Angeles";
+    search.isFlight(from, to);
+    search.printRoute();
+
+}
 void second_practical() {
 
     std::vector<Letter> letters = {
@@ -143,11 +169,19 @@ void second_practical() {
     int sequentially_train_ranges[] = { 100,1000 };
 
     for (int i = 0; i < 3; i++) {
-        perceptron.train_random(random_train_ranges[i]);
-        perceptron.check();
         perceptron.reset();
+        perceptron.train_random(random_train_ranges[i]);
+        perceptron.check();  
     }
+
+    perceptron.setLetters(letterP);
+    perceptron.check();
+
+    perceptron.reset();
+    perceptron.setLetters(letters);
+
     for (int i = 0; i < 2; i++) {
+        perceptron.reset();
         perceptron.train_sequentially(sequentially_train_ranges[i]);
         perceptron.check();
        
