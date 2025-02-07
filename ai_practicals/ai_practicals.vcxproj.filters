@@ -54,6 +54,27 @@
     <ClCompile Include="Flight.cpp">
       <Filter>pr3\Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="BreadthSearch.cpp">
+      <Filter>pr3\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Search.cpp">
+      <Filter>pr3\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HillClimbingSearch.cpp">
+      <Filter>pr3\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MinimalCostSearch.cpp">
+      <Filter>pr3\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DeletePathSearch.cpp">
+      <Filter>pr3\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DeleteNodeSearch.cpp">
+      <Filter>pr3\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OptimalSearch.cpp">
+      <Filter>pr3\Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Attribute.h">
@@ -72,6 +93,27 @@
       <Filter>pr3\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Flight.h">
+      <Filter>pr3\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BreadthSearch.h">
+      <Filter>pr3\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Search.h">
+      <Filter>pr3\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HillClimbingSearch.h">
+      <Filter>pr3\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MinimalCostSearch.h">
+      <Filter>pr3\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DeletePathSearch.h">
+      <Filter>pr3\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DeleteNodeSearch.h">
+      <Filter>pr3\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OptimalSearch.h">
       <Filter>pr3\Header Files</Filter>
     </ClInclude>
   </ItemGroup>

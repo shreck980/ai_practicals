@@ -8,6 +8,12 @@
 #include "Letter.h"
 #include "PerceptronLearning.h"
 #include "DepthSearch.h"
+#include "BreadthSearch.h"
+#include "HillClimbingSearch.h"
+#include "MinimalCostSearch.h"
+#include "DeletePathSearch.h"
+#include "DeleteNodeSearch.h"
+#include "OptimalSearch.h"
 #include <locale>
 
 
@@ -15,6 +21,7 @@
 void first_practical(); 
 void second_practical(); 
 void third_practical(); 
+void addFlightsToSearch(Search& search);
 
 int main()
 {
@@ -26,27 +33,72 @@ int main()
 
 void third_practical() {
 
-    DepthSearch search;
-   
-
-     search.addFlight("New York", "Chicago", 1000);
-     search.addFlight("Chicago", "Denver", 1000);
-     search.addFlight("New York", "Toronto", 800);
-     search.addFlight("New York", "Denver", 1900);
-     search.addFlight("Toronto", "Calgary", 1500);
-     search.addFlight("Toronto", "Los Angeles", 1800);
-     search.addFlight("Toronto", "Chicago", 500);
-     search.addFlight("Denver", "Urbana", 1000);
-     search.addFlight("Denver", "Houston", 1500);
-     search.addFlight("Houston", "Los Angeles", 1500);
-     search.addFlight("Denver", "Los Angeles", 1000);
+    DepthSearch depthSearch;
+    BreadthSearch breadthSearch;
+    HillClimbingSearch hillClimbingSearch;
+    MinimalCostSearch minimalCostSearch;
+    DeletePathSearch deletePathSearch;
+    DeleteNodeSearch deleteNodeSearch;
+    OptimalSearch optimalSearch;
+ 
+    addFlightsToSearch(depthSearch);
+    addFlightsToSearch(breadthSearch);
+    addFlightsToSearch(hillClimbingSearch);
+    addFlightsToSearch(minimalCostSearch);
+    addFlightsToSearch(deletePathSearch);
+    addFlightsToSearch(deleteNodeSearch);
+    addFlightsToSearch(optimalSearch);
+    
 
     std::string from = "New York";
     std::string to = "Los Angeles";
-    search.isFlight(from, to);
-    search.printRoute();
+
+    std::cout << "== Deapth Search ==\n";
+    depthSearch.isFlight(from,to);
+    depthSearch.printRoute();
+
+    std::cout << "\n== Breadth Search ==\n";
+    breadthSearch.isFlight(from, to);
+    breadthSearch.printRoute();
+
+    std::cout << "\n== Hill Climbing Search ==\n";
+    hillClimbingSearch.isFlight(from, to);
+    hillClimbingSearch.printRoute();
+
+    std::cout << "\n== Minimal Cost Search ==\n";
+    minimalCostSearch.isFlight(from, to);
+    minimalCostSearch.printRoute();
+
+
+    std::cout << "\n== Delete Path Search ==\n";
+    deletePathSearch.search(from,to);
+
+    std::cout << "\n== Delete Node Search ==\n";
+    deleteNodeSearch.search(from, to);
+
+    std::cout << "\n== Optimal Search ==\n";
+    optimalSearch.search(from, to);
+
+    //search.isFlight(from, to);
+    //search.printRoute();
+    //search.search(from, to);
 
 }
+
+void addFlightsToSearch(Search& search) {
+    search.addFlight("New York", "Chicago", 1000);
+    search.addFlight("Chicago", "Denver", 1000);
+    search.addFlight("New York", "Toronto", 800);
+    search.addFlight("New York", "Denver", 1900);
+    search.addFlight("Toronto", "Calgary", 1500);
+    search.addFlight("Toronto", "Los Angeles", 1800);
+    search.addFlight("Toronto", "Chicago", 500);
+    search.addFlight("Denver", "Urbana", 1000);
+    search.addFlight("Denver", "Houston", 1500);
+    search.addFlight("Houston", "Los Angeles", 1500);
+    search.addFlight("Denver", "Los Angeles", 1000);
+}
+
 void second_practical() {
 
     std::vector<Letter> letters = {

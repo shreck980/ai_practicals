@@ -129,19 +129,33 @@
   <ItemGroup>
     <ClCompile Include="ai_practicals.cpp" />
     <ClCompile Include="Attribute.cpp" />
+    <ClCompile Include="BreadthSearch.cpp" />
+    <ClCompile Include="DeleteNodeSearch.cpp" />
+    <ClCompile Include="DeletePathSearch.cpp" />
     <ClCompile Include="DepthSearch.cpp" />
     <ClCompile Include="Flight.cpp" />
     <ClCompile Include="Generalizer.cpp" />
+    <ClCompile Include="HillClimbingSearch.cpp" />
     <ClCompile Include="Letter.cpp" />
+    <ClCompile Include="MinimalCostSearch.cpp" />
+    <ClCompile Include="OptimalSearch.cpp" />
     <ClCompile Include="PerceptronLearning.cpp" />
+    <ClCompile Include="Search.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Attribute.h" />
+    <ClInclude Include="BreadthSearch.h" />
+    <ClInclude Include="DeleteNodeSearch.h" />
+    <ClInclude Include="DeletePathSearch.h" />
     <ClInclude Include="DepthSearch.h" />
     <ClInclude Include="Flight.h" />
     <ClInclude Include="Generalizer.h" />
+    <ClInclude Include="HillClimbingSearch.h" />
     <ClInclude Include="Letter.h" />
+    <ClInclude Include="MinimalCostSearch.h" />
+    <ClInclude Include="OptimalSearch.h" />
     <ClInclude Include="PerceptronLearning.h" />
+    <ClInclude Include="Search.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
